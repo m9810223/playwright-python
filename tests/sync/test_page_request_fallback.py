@@ -174,7 +174,7 @@ def test_should_delete_header_with_undefined_value(page: Page, server: Server) -
     server.set_route(
         "/something",
         lambda r: (
-            r.setHeader("Acces-Control-Allow-Origin", "*"),
+            r.setHeader("Access-Control-Allow-Origin", "*"),
             r.write(b"done"),
             r.finish(),
         ),
